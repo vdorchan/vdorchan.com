@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 10
+branches:
+  only:
+  - master
+install:
+  - npm i -g yarn
+  - yarn
+  - yarn build
+addons:
+  ssh_know_hosts: vdorchan
