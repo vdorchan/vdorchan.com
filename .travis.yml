@@ -9,7 +9,7 @@ install:
 - yarn
 - yarn build
 addons:
-  ssh_know_hosts: vdorchan
+  ssh_know_hosts: vdorchan.com
 script:
 - rsync -avu --progress --delete dist/ root@vdorchan.com:/srv/www/vdorchan.com/
 before_install:
