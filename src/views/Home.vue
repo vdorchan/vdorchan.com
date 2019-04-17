@@ -1,13 +1,5 @@
 <template>
   <div class="home">
-    <header>
-      <a
-        href="vdorchan.com"
-        class="logo"
-      >
-        <img src="@/assets/images/logo.png">
-      </a>
-    </header>
     <article>
       <h1><span>vdorchan</span> / <span>Front-end Developer</span></h1>
       <nav>
@@ -31,15 +23,15 @@
         ></social-icon>
         <social-icon
           type="github"
-          url="mailto:vdorchan.com"
+          url="https://vdorchan.com"
         ></social-icon>
         <social-icon
           type="wechat"
-          url="mailto:vdorchan.com"
+          url="13265026280"
         ></social-icon>
         <social-icon
           type="qq"
-          url="mailto:vdorchan.com"
+          url="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=273171724&website=www.oicqzone.com"
         ></social-icon>
       </div>
       <copyright></copyright>
@@ -72,10 +64,10 @@ export default {
 
 <style lang="scss">
 .home {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   overflow: hidden;
   font-size: rem(14);
 }
