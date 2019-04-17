@@ -4,6 +4,7 @@ node_js:
 branches:
   only:
   - master
+cache: yarn
 addons:
   ssh_known_hosts: vdorchan.com
 script:
