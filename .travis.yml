@@ -4,10 +4,6 @@ node_js:
 branches:
   only:
   - master
-install:
-- npm i -g yarn
-- yarn
-- yarn build
 addons:
   ssh_known_hosts: vdorchan.com
 script:
@@ -17,4 +13,4 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 after_success:
-- ssh root@vdorchan.com 'cd /srv/www/vdorchan.com/ && rm -r * -f yarn build && yarn start'
+- ssh root@vdorchan.com 'cd /srv/www/vdorchan.com/ && yarn build && yarn start'
