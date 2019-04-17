@@ -1,22 +1,7 @@
-# vdorchan.com-ssr
+# vdorchan.com
 
-> My super-excellent Nuxt.js project
+> 我的个人网站，使用 travis CI 自动部署。 https://vdorchan.com
 
-## Build Setup
+## 技术栈
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+vue2 + vuex + nuxt + webpack + ES6/7 + axios + sass + flex + svg + travis CI
