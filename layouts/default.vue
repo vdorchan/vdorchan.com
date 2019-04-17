@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <a
-        href="vdorchan.com"
+        href="https://vdorchan.com"
         class="logo"
       >
         <img src="@/assets/images/logo.png">
