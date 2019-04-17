@@ -66,6 +66,7 @@ header {
   display: block;
   width: rem(40);
   img {
+    display: block;
     width: 100%;
   }
 }

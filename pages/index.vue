@@ -11,7 +11,10 @@
         ></a>
       </nav>
       <div class="introduce">
-        我是一个对 Web 开发由衷热爱的前端工程师，喜欢 JavaScript 和 JavaScript 全栈开发熟悉或了解 JavaScript、vue.js、Node.js、Koa、MongoDB、Electron等等。对学习新东西有着极大的兴趣和热情，尽量的去折腾多点东西是个人的信念。喜欢一股脑投入项目。完成一项项目可以带来极大的成就感。身处任何团队，都渴望倾注开发的热情，为团队发展献上力量。
+        <p>
+          我是一个对 Web 开发由衷热爱的前端工程师，喜欢 JavaScript 和 JavaScript 全栈开发。除了能 JavaScript、CSS、HTML 进行页面开发之外，同样熟悉或了解 Vue.js、Node.js、Koa、MongoDB、Electron 等库和框架，以及 webpack、gulp等工具。有开发前端工具经验，可有效促进团队工作效率。对学习新东西有着极大的兴趣和热情，折腾是个人的信念。喜欢一股脑投入项目，完成一项项目可以带来极大的成就感。渴望一个合适的团队，为其倾注开发的热情，共同进步。
+        </p>
+        <p class="social-tips">你可以通过底部的社交方式联系到我。</p>
       </div>
     </article>
     <footer>
@@ -23,7 +26,7 @@
         ></social-icon>
         <social-icon
           type="github"
-          url="https://vdorchan.com"
+          url="https://github.com/vdorchan.com"
         ></social-icon>
         <social-icon
           type="wechat"
@@ -50,8 +53,8 @@ export default {
     return {
       navs: [
         { url: 'https://blog.vdorchan.com', label: '博客<br>Blog' },
-        { url: 'https://resume.vdorchan.com', label: '简历<br>Resume' },
-        { url: 'javascript:', label: '项目<br>Projects' }
+        { url: 'https://resume.vdorchan.com', label: '简历<br>Resume' }/* ,
+        { url: 'javascript:', label: '项目<br>Projects' } */
       ]
     }
   },
@@ -82,6 +85,7 @@ h1 {
   // font-size: rem(10);
   font-size: rem(35);
   padding-bottom: rem(10);
+  text-align: center;
   span {
     white-space: nowrap;
   }
@@ -103,28 +107,29 @@ nav {
     background: #8c43ff;
     color: #ffffff;
     text-decoration: none;
-    transition:.2s all;
-    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    transition: 0.2s all;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
   }
   &:hover a {
-    filter:blur(1px);
-    opacity:.5;
-    transform: scale(.98);
-    box-shadow:none;
+    filter: blur(1px);
+    opacity: 0.5;
+    transform: scale(0.98);
+    box-shadow: none;
 
     &:hover {
-      transform:scale(1);
-      filter:blur(0px);
-      opacity:1;
-      box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+      box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
     }
   }
 }
 .introduce {
   padding: 0 rem(20);
   max-width: 500px;
-  font-size: rem(12);
+  font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 footer {
   display: flex;
@@ -140,6 +145,9 @@ footer {
   > a {
     margin: 0 rem(10);
   }
+}
+.social-tips {
+  text-decoration: underline;
 }
 .motto {
   padding: rem(20) 0 rem(20);
