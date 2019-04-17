@@ -8,6 +8,7 @@
           :href="nav.url"
           v-html="nav.label"
           :key="nav.url"
+          target="_blank"
         ></a>
       </nav>
       <div class="introduce">
@@ -22,15 +23,15 @@
       <div class="social-icon-wrapper">
         <social-icon
           type="mail"
-          url="mailto:vdorchan.com"
+          url="mailto:vdorchan@gmailcom"
         ></social-icon>
         <social-icon
           type="github"
-          url="https://github.com/vdorchan.com"
+          url="https://github.com/vdorchan"
         ></social-icon>
         <social-icon
           type="wechat"
-          url="13265026280"
+          url="vudorchan"
         ></social-icon>
         <social-icon
           type="qq"
